@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<input type="number" id="firstnumber">
+<button onclick="add()">+</button>
+<button onclick="de()">-</button>
+<button onclick="mu()">*</button>
+<button onclick="di()">/</button>
+<input type="number" id="lastnumber">
+<br>
+
+<button onclick="reset()">reset</button>
+
+
+
+<br>
+
+
+<script>
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+   
+function add() {
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str;
+     str = parseInt(x) + parseInt(y);  
+     
+    document.getElementById("demo").innerHTML = str;
+    }
+    function de() {
+   var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str;
+     str = parseInt(x) - parseInt(y);  
+     
+    document.getElementById("demo").innerHTML = str;
+    }
+    function mu() {
+   var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str;
+     str = parseInt(x) * parseInt(y);  
+     
+    document.getElementById("demo").innerHTML = str;
+    }
+    function di() {
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str;
+     str = parseInt(x) / parseInt(y);  
+     
+    document.getElementById("demo").innerHTML = str;
+    }
+   
+    function reset(){
+    document.getElementById("firstnumber").value="";
+    document.getElementById("lastnumber").value="";
+    }
+</script>
+
+
+<output id="demo"></output>
+
+</body>
+</html>

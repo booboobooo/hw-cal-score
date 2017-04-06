@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<p>你有沒有及格呢?</p>
+
+<input id="score"  />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var age, voteable;
+    age = document.getElementById("score").value;
+    voteable = (age < 60) ? "不及格":"及格";
+    document.getElementById("demo").innerHTML = voteable ;
+}
+</script>
+
+</body>
+</html>
